@@ -13,4 +13,11 @@
 |
 */
 
-$router->post('/produk','prdukControler@create');
+$router->post('/produk','produkController@create');
+$router->get('/produk','produkController@index');
+$router->get('/produk/{id}','produkController@show');
+$router->put('/produk/{id}','produkController@update');
+$router->delete('/produk/{id}','produkController@destroy');
+
+$router->post('/register','UserController@register');
+$router->post('/login','UserController@login');
